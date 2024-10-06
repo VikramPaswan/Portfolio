@@ -29,3 +29,14 @@ function scrollFunction() {
         navbarLinks[3].classList.remove("active");
     }
 }
+const cvButton = document.getElementById('CV');
+
+cvButton.addEventListener('click', () => {
+  const cvPath = 'VikramKumarPaswanResume.pdf';
+
+  const link = document.createElement('a');
+  link.href = cvPath;
+  link.download = 'Vikram Kumar Paswan Resume.pdf';
+
+  link.click();
+});
